@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Post Title Goes Here | Your Site Name</title>
+	<meta name="description" content="Short quoted note or update. This keeps the same placement and function a short callout can have near the top of a post, but with a quieter gray accent.">
+	<style>
+		:root {
+			--bg: #202124;
+			--text: #ffffff;
+			--muted: #ffffff;
+			--heading: #ffffff;
+			--link: #7fb0ff;
+			--link-hover: #a9c8ff;
+			--quote-border: #7b848f;
+			--quote-text: #ffffff;
+			--code-text: #f2f4f7;
+			--code-bg: #2b2d31;
+			--code-block-bg: #2b2d31;
+			--code-border: #454b55;
+			--note-bg: #2b2d31;
+			--note-border: #454b55;
+			--content-width: 920px;
+			--article-image-width: 700px;
+			--radius: 5px;
+			--display-font: "Segoe UI", sans-serif;
+			--body-font: "Segoe UI", sans-serif;
+			--masthead-gap: 48px;
+		}
+		html {
+			color-scheme: dark;
+			color: var(--text);
+			font-family: var(--body-font);
+			font-size: 15px;
+			line-height: 1.6;
+			scroll-behavior: smooth;
+		}
+		body {
+			margin: 8px;
+			background: var(--bg);
+		}
+		* {
+			box-sizing: border-box;
+			-webkit-tap-highlight-color: transparent;
+		}
+		a {
+			color: var(--link);
+			text-decoration: underline;
+			text-underline-offset: 0.18em;
+			text-decoration-thickness: 1px;
+		}
+		a:hover,
+		a:focus {
+			color: var(--link-hover);
+			background: transparent;
+			outline: none;
+		}
+		p,
+		li {
+			font-family: var(--body-font);
+			font-weight: 400;
+			line-height: 1.5;
+		}
+		p {
+			margin-block: 1em;
+		}
+		ul,
+		ol {
+			padding-inline-start: 2em;
+		}
+		li {
+			margin-bottom: 0.6em;
+		}
+		blockquote {
+			font-family: var(--body-font);
+			margin: 0;
+			padding-left: 1em;
+			border-left: 3px solid var(--quote-border);
+			color: var(--quote-text);
+			font-style: italic;
+		}
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: 0 auto;
+			border: none;
+		}
+		figure {
+			display: block;
+			max-width: 100%;
+			margin: 0;
+			padding: 0.5em 0;
+		}
+		figure img {
+			max-width: min(var(--article-image-width), 100%);
+		}
+		figcaption {
+			font-family: var(--body-font);
+			max-width: min(var(--article-image-width), 100%);
+			margin: 0.7em auto 0;
+			color: var(--muted);
+			font-style: italic;
+			text-align: center;
+		}
+		code,
+		pre {
+			font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+			font-size: 0.9rem;
+		}
+		code {
+			color: var(--code-text);
+			padding: 0.1em 0.2em;
+			border-radius: 3px;
+			background: var(--code-bg);
+		}
+		pre {
+			color: var(--code-text);
+			margin-block: 1em;
+			overflow-x: auto;
+			padding: 1em;
+			border: 1px solid var(--code-border);
+			border-radius: var(--radius);
+			background: var(--code-block-bg);
+			line-height: 1.4;
+		}
+		pre code {
+			padding: 0;
+			background: transparent;
+			color: inherit;
+			font-size: 100%;
+		}
+		.content {
+			max-width: var(--content-width);
+			margin: 0 auto 4em;
+			padding-top: var(--masthead-gap);
+			padding-inline: 1ch;
+			overflow-wrap: break-word;
+		}
+		.site-header {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			gap: 1rem;
+			margin: 0 0 var(--masthead-gap);
+		}
+		.site-title {
+			font-family: var(--display-font);
+			font-size: 1.875rem;
+			line-height: 2.25rem;
+			font-weight: 400;
+			color: inherit;
+			text-decoration: none;
+		}
+		.site-title:hover,
+		.site-title:focus {
+			color: inherit;
+		}
+		.site-nav {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+		.post-title-group {
+			margin-bottom: 1em;
+		}
+		h1,
+		h2,
+		h3 {
+			font-family: var(--display-font);
+			color: var(--heading);
+			margin-top: 1.3em;
+			margin-bottom: 0.5em;
+			line-height: 1.2;
+			font-weight: 600;
+		}
+		h1 {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 1.9rem;
+			font-weight: 700;
+		}
+		h2 {
+			font-size: 1.6rem;
+		}
+		h3 {
+			font-size: 1.4rem;
+		}
+		.meta,
+		time {
+			font-family: var(--body-font);
+			color: var(--muted);
+			font-size: 1em;
+			font-style: italic;
+			letter-spacing: 0;
+		}
+		.body > :first-child {
+			margin-top: 0;
+		}
+		.subtle-card {
+			margin: 2em 0;
+			padding: 1em 1.25em;
+			border: 1px solid var(--note-border);
+			background: var(--note-bg);
+		}
+		.subtle-card p {
+			margin: 0;
+		}
+		.footer-note {
+			font-family: var(--body-font);
+			color: var(--muted);
+			font-size: 0.95rem;
+		}
+		@media (max-width: 37.4em) {
+			.content {
+				padding-top: 16px;
+				padding-inline: 0.5rem;
+			}
+			.site-header {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.5rem;
+				margin-bottom: 48px;
+			}
+			.site-title {
+				font-size: 1.875rem;
+				line-height: 2.25rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<header class="site-header">
+			<div class="main">
+				<a class="site-title" href="/">Your Site Name</a>
+			</div>
+			<nav class="site-nav" aria-label="Primary">
+				<a href="/">Home</a>
+				<a href="/blog/">Blog</a>
+				<a href="/about.html">About</a>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<div class="post-title-group">
+					<h1>Your Post Title Goes Here</h1>
+					<div class="meta">
+						<time datetime="2026-03-22">March 22, 2026</time>
+					</div>
+				</div>
+				<section class="body">
+					<blockquote>
+						<p>Short quoted note or update. This keeps the same placement and function a short callout can have near the top of a post, but with a quieter gray accent.</p>
+					</blockquote>
+					<p>Start with a direct opening paragraph. State what happened, what you tested, what you built, or what you learned. The layout here is intentionally plain so the writing does most of the work, which is often the strongest part of a good technical blog format.</p>
+					<figure>
+						<img src="assets/blog-template-hero.svg" alt="Example hero image placeholder for a blog post">
+						<figcaption>Example image caption. Keep it short, specific, and useful.</figcaption>
+					</figure>
+					<p>From here, continue in simple paragraphs. If you link to hardware, code, repos, or prior articles, the links stay basic and blue instead of using a heavier accent treatment. That is the main intentional deviation in this template.</p>
+					<h2 id="section-heading-example">Section Heading Example</h2>
+					<p>Use headings when the post genuinely changes direction. Good technical blog posts usually alternate between explanation, evidence, and interpretation. That rhythm works especially well in this sort of stripped-down article layout.</p>
+					<ul>
+						<li>Short bullet lists fit naturally in this format.</li>
+						<li>They are most useful for tools, specs, steps, or test conditions.</li>
+						<li>Keep them tight so the article still reads like a narrative.</li>
+					</ul>
+					<figure>
+						<img src="assets/blog-template-detail.svg" alt="Example inline image placeholder for a secondary illustration">
+						<figcaption>A second image is enough for screenshots, graphs, or diagrams.</figcaption>
+					</figure>
+					<h2 id="code-example">Code Example</h2>
+					<p>Inline code like <code>git status</code> and code blocks keep a neutral gray treatment so they stand apart without borrowing the blue link color.</p>
+					<pre><code>&lt;figure&gt;
+	&lt;img src=&quot;images/example.jpg&quot; alt=&quot;Describe the image&quot; /&gt;
+	&lt;figcaption&gt;Explain why the image matters.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+					<div class="subtle-card">
+						<p>Small deviation: this light gray note box gives you one extra emphasis tool without moving far away from the overall restraint of the layout.</p>
+					</div>
+					<p class="footer-note">Duplicate this file for each post, change the title, date, copy, and image paths, then link it from your homepage or blog index.</p>
+				</section>
+			</article>
+		</main>
+	</div>
+</body>
+</html>

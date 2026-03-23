@@ -1,0 +1,23 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="640" fill="#F7F5EF"/>
+  <rect x="54" y="54" width="1092" height="532" rx="28" fill="#FFFCF6" stroke="#D6D0C2" stroke-width="4"/>
+  <rect x="106" y="110" width="988" height="76" rx="18" fill="#20242F"/>
+  <rect x="140" y="140" width="280" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.95"/>
+  <rect x="458" y="132" width="180" height="34" rx="17" fill="#0B57D0"/>
+  <rect x="106" y="226" width="458" height="288" rx="24" fill="#EDF1F5"/>
+  <rect x="592" y="226" width="502" height="132" rx="24" fill="#DCE8FF"/>
+  <rect x="592" y="382" width="502" height="132" rx="24" fill="#EEF2F6"/>
+  <path d="M166 448C228 396 306 430 350 366C390 308 462 312 504 256" stroke="#0B57D0" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="166" cy="448" r="14" fill="#20242F"/>
+  <circle cx="350" cy="366" r="14" fill="#20242F"/>
+  <circle cx="504" cy="256" r="14" fill="#20242F"/>
+  <rect x="630" y="258" width="184" height="18" rx="9" fill="#20242F"/>
+  <rect x="630" y="292" width="340" height="12" rx="6" fill="#5F6A77"/>
+  <rect x="630" y="320" width="288" height="12" rx="6" fill="#5F6A77"/>
+  <rect x="630" y="414" width="214" height="18" rx="9" fill="#20242F"/>
+  <rect x="630" y="448" width="388" height="12" rx="6" fill="#5F6A77"/>
+  <rect x="630" y="476" width="312" height="12" rx="6" fill="#5F6A77"/>
+  <text x="106" y="556" fill="#20242F" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600" letter-spacing="1.8">
+    Use for screenshots, charts, or diagrams
+  </text>
+</svg>
