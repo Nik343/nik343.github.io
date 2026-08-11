@@ -1,0 +1,20 @@
+{
+  "format": "xns-merkle-v1",
+  "network": "mainnet",
+  "hash_algorithm": "sha256",
+  "page_size": 32768,
+  "page_path_template": "pages/{hash-prefix}/{hash}.json",
+  "root_hash": "e13f5c2af2273a39fccaa1828e22cea20e7863707902b145e426f34d31c82773",
+  "tree_levels": 1,
+  "page_count": 1,
+  "record_count": 10,
+  "active_record_count": 10,
+  "indexed_height": 3738100,
+  "indexed_block_hash": "cae547ca923a0d106aeddb63fbe38c341afb4518341568647901bf1a72d839d2",
+  "protocol_address": "47iYR5A7CRbfhs8LQaHSMxQVynmKbTbbi2itFFo4Wg6tSf6Qhzsxe3Lb4W3FbyKCFMWN9rT5EUjzTaNBgS6NCeNj4y35XNS",
+  "generated_at": "2026-08-11T22:01:11Z",
+  "valid_until": "2026-08-11T23:31:11Z",
+  "primary_fingerprint": "EB4C42C1C13F7206780CC425742CD38F651C0272",
+  "signing_key_fingerprint": "FAF561269FE61F4C1FF5F4BAB5D4C3B1FCEA84B9",
+  "public_certificate": "keys/current.asc"
+}
